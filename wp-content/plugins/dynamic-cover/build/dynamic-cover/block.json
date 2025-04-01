@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/dynamic-cover",
+  "version": "0.1.0",
+  "title": "Dynamic Cover",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "dynamicly render image and text for hero pulls image from featured article post @latest.",
+  "example": {},
+  "attributes": {
+    "postArticle": {
+      "type": "string",
+      "default": ""
+    },
+    "postTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "postExcerpt": {
+      "type": "string",
+      "default": ""
+    },
+    "postImage": {
+      "type": "string",
+      "default": ""
+    },
+    "postCategory": {
+      "type": "string",
+      "default": ""
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "showExcurpt": {
+      "type": "boolean",
+      "default": true
+    },
+    "showByLine": {
+      "type": "boolean",
+      "default": true
+    },
+    "fontFamily": {
+      "type": "string",
+      "default": "Inter, sans-serif"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "backgroundOpacity": {
+      "type": "number",
+      "default": 0.2
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "dynamic-cover-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

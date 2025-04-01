@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/dynamic-post-block",
+  "version": "0.1.0",
+  "title": "Dynamic Post Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "render posts dynamicly user selects amount of post posts are render based on tag user inputs.",
+  "example": {},
+  "attributes": {
+    "postCount": {
+      "type": "number",
+      "default": 6
+    },
+    "postTag": {
+      "type": "string",
+      "default": ""
+    },
+    "postCategory": {
+      "type": "string",
+      "default": ""
+    },
+    "fontFamily": {
+      "type": "string",
+      "default": "Inter, sans-serif"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#555555"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundOpacity": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "dynamic-post-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
