@@ -1,0 +1,84 @@
+/**
+ * Theme Name:        boiler plate
+
+ * Description:       Custom theme description...
+ * Version:           1.0.0
+ * Author:            tumi
+
+ * Tags:              block-patterns, full-site-editing
+ * Text Domain:       fabled-sunset
+ * Domain Path:       /assets/lang
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+.entry-content {
+  width: 100% ;
+  max-width: 100% ;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Optional: Ensure the parent container is full-width */
+.page .site-main, .single .site-main {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Optional: Remove margins/padding from the body or wrapper */
+body, .site {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header-hide-show,
+.header-sticky,
+.header-fixed{
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.header-fixed{
+  position: fixed;
+}
+.header-hide-show {
+  position: sticky;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+.hero-latest-post-wrap {
+  position: relative;
+}
+
+.hero-latest-post-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-fallback-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: black;
+  z-index: 0;
+}
+
+.hero-latest-post-text {
+  z-index: 2;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
